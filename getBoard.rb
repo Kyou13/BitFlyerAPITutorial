@@ -16,5 +16,5 @@ def get_price
   https.use_ssl = true # SSL/TLS を利用するかどうか
   response = https.get(uri.request_uri) # path + '?' + query」を文字列で返す
   response_hash = JSON.parse(response.body)
-  puts response_hash["mid_price"]
+  response_hash["mid_price"]
 end

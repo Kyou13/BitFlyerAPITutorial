@@ -4,7 +4,7 @@ require "openssl"
 require './key'
 require "net/http"
 
-def buy_order(side, price, size)
+def order(side, price, size)
   key = API_KEY
   secret = API_SECRET
   
